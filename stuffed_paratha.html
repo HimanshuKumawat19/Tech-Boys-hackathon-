@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recipesStyles.css">
+    <link rel="icon" href="images/logos/tastemasters-low-resolution-logo-color-on-transparent-background.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4bfab023ee.js" crossorigin="anonymous"></script>
+    <title>Taste Collection</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 20px; 
+            justify-content: space-evenly;
+            
+        }
+
+        .column1 {
+            float: left;
+            width: 50%;
+            box-sizing: border-box; 
+            padding: 20px;
+            border: solid #f44336;
+            border-radius: 7px;
+            margin: 0;
+            justify-content: space-evenly;
+            
+        }
+        .column2 {
+            float: left;
+            width: 50%;
+            box-sizing: border-box; 
+            padding: 20px;
+            border: solid #f44336;
+            margin: 0;
+            justify-content: space-evenly;
+            border-radius: 7px;
+        }
+
+        h2 {
+            color:  #f44336;
+            text-align: center;
+            justify-content: space-evenly;
+            
+        }
+        .youtube{
+            border: solid #f44336;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 560px;
+            height: 315px;
+            border-radius: 3px;
+            margin-left: 50%;
+            margin-bottom: 5%;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <section class="header" id = "home">
+        <nav>
+            <img src="Images_1/logo.png" alt="TasteCollectionLogo">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-solid fa-xmark" id = "x-icon" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href = "index.html">HOME</a></li>
+                    <li><a href = "#trendingRecipess">Trending Recipes</a></li>
+                    <li><a href = "#OurRecipes">Our Recipes</a></li>
+                    <li><a href = "#contactUS">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class=" fa fa-solid fa-bars" id = "ham-icon" onclick="showMenu()"></i>
+        </nav>
+
+
+    </section>
+
+    
+
+    <!-- Recipes -->
+
+    <div class="container">
+        <div class="column1">
+            <h2>Ingredients</h2>
+            For the Paratha Dough: <br>
+            Water (as needed for kneading) <br>
+            Salt to taste <br>
+            For the Potato Filling: <br>
+            3 medium-sized potatoes, boiled and mashed <br>
+            1 small onion, finely chopped <br>
+            1 green chili, finely chopped <br>
+            1/2 teaspoon grated ginger <br>
+            1/2 teaspoon cumin seeds <br>
+            1/2 teaspoon garam masala <br>
+            1/2 teaspoon red chili powder (adjust to taste) <br>
+            Fresh coriander leaves, chopped <br>
+            Salt to taste <br>
+            For Cooking: <br>
+            Ghee or oil for cooking <br>
+            2 cups whole wheat flour (atta)
+            
+        </div>
+        <div class="column2">
+            <h2>Instructions</h2>
+            For the Paratha Dough: <br>
+            In a large mixing bowl, combine whole wheat flour and a pinch of salt.
+            Gradually add water and knead the flour to form a smooth, soft dough.
+            Cover the dough and let it rest for at least 15-20 minutes. <br>
+            For the Potato Filling: <br>
+            In a mixing bowl, combine boiled and mashed potatoes with chopped onions, green chili, grated ginger, cumin seeds, garam masala, red chili powder, chopped coriander leaves, and salt.
+            Mix the filling thoroughly to ensure even distribution of spices. <br>
+            For Assembling and Cooking: <br>
+            Divide the dough into equal-sized balls.
+            Take one dough ball, roll it into a small disc, and place a portion of the potato filling in the center.
+            Seal the edges of the dough, enclosing the filling to form a stuffed ball.
+            Flatten the stuffed ball with your hands and roll it gently into a circular paratha, using some dry flour to prevent sticking.
+            Heat a tawa or griddle over medium heat.
+            Place the rolled paratha on the hot tawa and cook until small bubbles appear on the surface.
+            Flip the paratha, apply ghee or oil on the cooked side, and cook the other side until golden brown.
+            Repeat the process for the remaining dough balls. <br>
+            Serving: <br>
+            Serve the hot Aloo Stuffed Parathas with yogurt, pickles, or any chutney of your choice.
+            
+            
+        </div>
+    </div>
+    <div class="youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XtNENYylvao?si=xaEq-CxFxVhjuSat" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <!-- Contacts -->
+
+    <section class="footer" id = "contactUS">
+        
+        <h2>Contact us</h2>
+        <p>+91 8764983223</p>
+        <p class="e-mail">TasteCollection@gmail.com</p>
+
+        <div class="icons">
+            <i class="fa fa-brands fa-instagram"></i>
+            <i class="fa fa-brands fa-facebook"></i>
+            <i class="fa fa-brands fa-twitter"></i>
+            <i class="fa fa-brands fa-youtube"></i>
+        </div>
+        <p>Copyright © TasteCollection 2023</p>
+    </section>
+
+    <script>
+        let navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+            
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+    
+        }
+
+
+    </script>
+
+</body>
+</html>

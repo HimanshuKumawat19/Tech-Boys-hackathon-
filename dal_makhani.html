@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recipesStyles.css">
+    <link rel="icon" href="images/logos/tastemasters-low-resolution-logo-color-on-transparent-background.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4bfab023ee.js" crossorigin="anonymous"></script>
+    <title>Taste Collection</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 20px; 
+            justify-content: space-evenly;
+            
+        }
+
+        .column1 {
+            float: left;
+            width: 50%;
+            box-sizing: border-box; 
+            padding: 20px;
+            border: solid #f44336;
+            border-radius: 7px;
+            margin: 0;
+            justify-content: space-evenly;
+            
+        }
+        .column2 {
+            float: left;
+            width: 50%;
+            box-sizing: border-box; 
+            padding: 20px;
+            border: solid #f44336;
+            margin: 0;
+            justify-content: space-evenly;
+            border-radius: 7px;
+        }
+
+        h2 {
+            color:  #f44336;
+            text-align: center;
+            justify-content: space-evenly;
+            
+        }
+        .youtube{
+            border: solid #f44336;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 560px;
+            height: 315px;
+            border-radius: 3px;
+            margin-left: 50%;
+            margin-bottom: 5%;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <section class="header" id = "home">
+        <nav>
+            <img src="Images_1/logo.png" alt="TasteCollectionLogo">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-solid fa-xmark" id = "x-icon" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href = "index.html">HOME</a></li>
+                    <li><a href = "#trendingRecipess">Trending Recipes</a></li>
+                    <li><a href = "#OurRecipes">Our Recipes</a></li>
+                    <li><a href = "#contactUS">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class=" fa fa-solid fa-bars" id = "ham-icon" onclick="showMenu()"></i>
+        </nav>
+
+
+    </section>
+
+    
+
+    <!-- Recipes -->
+
+    <div class="container">
+        <div class="column1">
+            <h2>Ingredients</h2>
+            1 cup whole black lentils (urad dal) <br>
+            1 large onion, finely chopped <br>
+            2 large tomatoes, pureed <br>
+            1/4 cup butter <br>
+            1/4 cup cream <br>
+            1 tablespoon ginger-garlic paste <br>
+            1-2 green chilies, chopped (adjust to taste) <br>
+            1 teaspoon cumin seeds <br>
+            1 teaspoon garam masala <br>
+            1/2 teaspoon turmeric powder <br>
+            1 teaspoon red chili powder (adjust to taste) <br>
+            Salt to taste <br>
+            Fresh coriander leaves for garnish <br>
+            1/4 cup kidney beans (rajma)
+            
+        </div>
+        <div class="column2">
+            <h2>Instructions</h2>
+            Soak Lentils and Beans: <br>
+            Wash urad dal and rajma and soak them together in water overnight or for at least 8 hours. <br>
+            Cook Lentils and Beans: <br>
+            
+            In a pressure cooker, cook the soaked urad dal and rajma with enough water and a pinch of salt until they are soft and fully cooked. This may take around 20-25 minutes. <br>
+            Prepare Tomato Puree: <br>
+            
+            While the lentils and beans are cooking, puree the tomatoes in a blender. <br>
+            Cooking the Dal: <br>
+            
+            In a large pan, heat butter. Add cumin seeds and let them splutter.
+            Add chopped onions and sauté until they become golden brown. <br>
+            Add Ginger-Garlic Paste and Spices: <br>
+            
+            Add ginger-garlic paste and chopped green chilies. Sauté for a minute until the raw aroma disappears.
+            Add turmeric powder, red chili powder, and garam masala. Mix well. <br>
+            Add Tomato Puree: <br>
+            
+            Add the tomato puree and cook until the oil starts separating from the masala. <br>
+            Add Cooked Lentils and Beans: <br>
+            
+            Add the cooked urad dal and rajma to the tomato gravy. Mix well. <br>
+            Simmer: <br>
+            
+            Let the dal simmer on low heat for at least 30-40 minutes. You can mash some of the lentils with the back of the spoon to thicken the dal. <br>
+            Add Cream: <br>
+            
+            Add cream to the dal and mix well. Adjust salt and spices according to your taste. <br>
+            Garnish and Serve: <br>
+            
+            Garnish the dal makhani with fresh coriander leaves.
+            Serve hot with naan, roti, or rice.
+            
+            
+            
+        </div>
+    </div>
+    <div class="youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mA5XjhdwJHc?si=o0WGje5n7QOe4v7r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <!-- Contacts -->
+
+    <section class="footer" id = "contactUS">
+        
+        <h2>Contact us</h2>
+        <p>+91 8764983223</p>
+        <p class="e-mail">TasteCollection@gmail.com</p>
+        <div class="icons">
+            <i class="fa fa-brands fa-instagram"></i>
+            <i class="fa fa-brands fa-facebook"></i>
+            <i class="fa fa-brands fa-twitter"></i>
+            <i class="fa fa-brands fa-youtube"></i>
+        </div>
+        <p>Copyright © TasteCollection 2023</p>
+    </section>
+
+    <script>
+        let navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+            
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+    
+        }
+
+
+    </script>
+
+</body>
+</html>

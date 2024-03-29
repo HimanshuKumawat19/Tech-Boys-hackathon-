@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logos/tastemasters-low-resolution-logo-color-on-transparent-background.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4bfab023ee.js" crossorigin="anonymous"></script>
+    <title>Taste Collection</title>
+</head>
+<body>
+
+    <section class="header" id = "home">
+        <nav>
+            <a href="index.html"><img src="Images_1/logo.png" alt="ChefLogo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-solid fa-xmark" id = "x-icon" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href = "#home">HOME</a></li>
+                    <li><a>Recipe Categoriess</a></li>
+                    <li><a href = "#reviews">Reviews</a></li>
+                    <li><a href = "#contactUS">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class=" fa fa-solid fa-bars" id = "ham-icon" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Taste Collection</h1>
+            <p>Where flavor meets expertise</p>
+            <a class="hero-btn">Let's Cook!</a>
+        </div>
+
+    </section>
+    
+
+    <section class="recipeCategories" id = "recCategories" >
+        <h2>Recipe categories</h2>
+        
+        <div class="row">
+            <div class="recipe-category">
+                <a href="dal_makhani.html" ><img src="Images_1/dal makhani.png" alt="DalmakhaniImage"></a>
+                <h3>Dal Makhani</h3>
+                <p>Dal Makhani is a popular and delicious North Indian dish that is a staple in many households and restaurants. It is a rich and hearty lentil curry made with black gram (urad dal) and kidney beans (rajma), simmered in a thick and creamy tomato-based gravy. The dish is characterized by its velvety texture and robust flavor.</p>
+            </div>
+            <div class="recipe-category">
+                <a href="stuffed_paratha.html" ><img src="Images_1/stuffed paratha.png" alt="ParathaImage"></a>
+                <h3>Stuffed Paratha</h3>
+                <p>Stuffed paratha is a popular Indian flatbread that is made by stuffing a variety of fillings into unleavened wheat dough and then rolling it out into a round shape before cooking on a griddle or skillet. Parathas can be enjoyed at any mealtime and are often served with yogurt, pickles, or a side of raita.</p>
+            </div>
+            <div class="recipe-category">
+                <a href="Dhokla.html" ><img src="Images_1/Dhokla.png" alt="DhoklaImage"></a>
+                <h3>Dhokla</h3>
+                <p>Dhokla is a popular and nutritious steamed cake originating from the Indian state of Gujarat. It is a fermented dish made primarily from fermented rice and chickpea flour (besan). Dhokla is known for its light and spongy texture and is often served as a snack, breakfast item, or part of a meal.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+
+    <section class="reviews" id="reviews">
+        <h2>Some of our reviews</h2>
+        <p> "We genuinely appreciate your input, and it helps us improve and better serve you in the future."</p>
+    
+        <div class="row">
+            <div class="review-col">
+                <img src="images/user.jpg" alt="user1">
+                <div>
+                    <p>"This recipe website stands out with its diverse culinary offerings, user-friendly interface, and reliable, well-tested recipes that consistently yield delicious results, making it a go-to resource for both novice and experienced cooks."</p>
+                    <h3>Manav Singh</h3>
+                    <i class=" fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="review-col">
+                <img src="images/user.jpg" alt="user2">
+                <div>
+                    <p>The diverse range of cuisines ensures there's something for every taste, making it my go-to resource for consistently delicious and foolproof meals. Kudos to the creators for curating such a delightful and user-friendly culinary haven!</p>
+                    <h3>Khushi Kumari</h3>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star"></i>
+                    <i class="fa fa-solid fa-star-half-stroke"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts -->
+
+    <section class="footer" id = "contactUS">
+        
+        <h2>Contact us</h2>
+        <p>+91 8764983223</p>
+        <p class="e-mail">Taste.collection@gmail.com</p>
+
+        <div class="icons">
+            <i class="fa fa-brands fa-instagram"></i>
+            <i class="fa fa-brands fa-facebook"></i>
+            <i class="fa fa-brands fa-twitter"></i>
+            <i class="fa fa-brands fa-youtube"></i>
+        </div>
+        <p>Copyright © TasteCollection 2023</p>
+    </section>
+
+    <script>
+        let navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+            
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+    
+        }
+
+
+    </script>
+
+</body>
+</html>
